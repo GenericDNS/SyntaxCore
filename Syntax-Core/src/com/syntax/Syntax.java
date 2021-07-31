@@ -3,6 +3,7 @@ package com.syntax;
 import com.syntax.bukkit.listener.BukkitBridge;
 import com.syntax.bukkit.modules.labymod.LabyMod;
 import com.syntax.lib.FileManager;
+import com.syntax.lib.FileUtils;
 import com.syntax.lib.console.DefaultLogger;
 import com.syntax.lib.console.SyntaxConsole;
 import com.syntax.lib.data.ServerData;
@@ -24,18 +25,25 @@ public class Syntax extends JavaPlugin {
     private ServerData serverData;
     private Scheduler scheduler;
     private FileManager fileManager;
+    private FileUtils fileUtils;
 
     @Override
     public void onEnable() {
         instance = this;
+        this.syntaxConsole = new SyntaxConsole();
+        this.syntaxConsole.sendAsciIcon();
         this.adapter = new Adapter("localhost", "3306", "network", "Lighdo183", "core");
         this.bukkitBridge = new BukkitBridge();
         this.labyMod = new LabyMod();
         this.defaultLogger = new DefaultLogger();
         this.defaultLogger = new DefaultLogger();
-        this.syntaxConsole = new SyntaxConsole();
         this.serverData = new ServerData();
         this.scheduler = new Scheduler(UUID.randomUUID());
+        this.fileUtils = new FileUtils();
+    }
+
+    public FileUtils getFileUtils() {
+        return fileUtils;
     }
 
     public DefaultLogger getDefaultLogger() {
