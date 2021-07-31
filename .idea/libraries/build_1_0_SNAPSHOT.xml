@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="build-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/DeskTop/ApiManagers/build-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/DeskTop/ApiManagers/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/DeskTop/ApiManagers/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar!/" />
+    </SOURCES>
+  </library>
+</component>

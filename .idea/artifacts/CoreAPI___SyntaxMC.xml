@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CoreAPI - SyntaxMC">
+    <output-path>$USER_HOME$/OneDrive/Desktop</output-path>
+    <root id="archive" name="CoreAPI - SyntaxMC.jar">
+      <element id="module-output" name="Syntax-Core" />
+    </root>
+  </artifact>
+</component>
